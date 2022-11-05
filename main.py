@@ -31,7 +31,6 @@ if enteredOption == 1:
     save_cookie(driver, 'cookie.pkl')
     print('Cookies saved successfully, webdriver is quiting.')
     driver.quit()
-    sys.exit()
 elif enteredOption == 2:
     options = webdriver.ChromeOptions()
     service = Service('C:/Program Files/ChromeDriver/chromedriver.exe')
@@ -42,7 +41,5 @@ elif enteredOption == 2:
     input()
     print('Webdriver is quiting.')
     driver.quit()
-    sys.exit()
 else:
     print('Wrong input, try again')
-    sys.exit()
