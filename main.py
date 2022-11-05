@@ -16,12 +16,12 @@ def load_cookie(driver, path):
 print("Enter 1 to run 'save cookie' algorithm")
 print("Enter 2 to run 'load cookie' algorithm")
 try:
-    qwe = int(input())
+    enteredOption = int(input())
 except Exception as e:
     print(e)
     print('Wrong input try again')
     sys.exit()
-if qwe == 1:
+if enteredOption == 1:
     options = webdriver.ChromeOptions()
     service = Service('C:/Program Files/ChromeDriver/chromedriver.exe')
     driver = webdriver.Chrome(service=service, options=options)
@@ -32,7 +32,7 @@ if qwe == 1:
     print('Cookies saved successfully, webdriver is quiting.')
     driver.quit()
     sys.exit()
-elif qwe == 2:
+elif enteredOption == 2:
     options = webdriver.ChromeOptions()
     service = Service('C:/Program Files/ChromeDriver/chromedriver.exe')
     driver = webdriver.Chrome(service=service, options=options)
